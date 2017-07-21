@@ -1,0 +1,604 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BC6206181F1F3A3B00FCDC9E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BC6206171F1F3A3B00FCDC9E /* main.m */; };
+		BC62061B1F1F3A3B00FCDC9E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BC62061A1F1F3A3B00FCDC9E /* AppDelegate.m */; };
+		BC62061E1F1F3A3B00FCDC9E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC62061D1F1F3A3B00FCDC9E /* ViewController.m */; };
+		BC6206211F1F3A3B00FCDC9E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC62061F1F1F3A3B00FCDC9E /* Main.storyboard */; };
+		BC6206231F1F3A3B00FCDC9E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC6206221F1F3A3B00FCDC9E /* Assets.xcassets */; };
+		BC6206261F1F3A3B00FCDC9E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC6206241F1F3A3B00FCDC9E /* LaunchScreen.storyboard */; };
+		BC6206311F1F3A3B00FCDC9E /* Luban_iOSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BC6206301F1F3A3B00FCDC9E /* Luban_iOSTests.m */; };
+		BC62063C1F1F3A3B00FCDC9E /* Luban_iOSUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = BC62063B1F1F3A3B00FCDC9E /* Luban_iOSUITests.m */; };
+		BC6206531F20AF3000FCDC9E /* PhotoBrowserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC6206521F20AF3000FCDC9E /* PhotoBrowserViewController.m */; };
+		BC6206571F20BAB000FCDC9E /* UIImage+Luban_iOS_Extension_h.m in Sources */ = {isa = PBXBuildFile; fileRef = BC6206561F20BAB000FCDC9E /* UIImage+Luban_iOS_Extension_h.m */; };
+		BC62065C1F21E2F600FCDC9E /* ModalTransitionAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = BC62065B1F21E2F600FCDC9E /* ModalTransitionAnimator.m */; };
+		BC62065F1F22012C00FCDC9E /* IMG_1998.JPG in Resources */ = {isa = PBXBuildFile; fileRef = BC62065E1F22012C00FCDC9E /* IMG_1998.JPG */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BC62062D1F1F3A3B00FCDC9E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BC62060B1F1F3A3B00FCDC9E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BC6206121F1F3A3B00FCDC9E;
+			remoteInfo = "Luban-iOS";
+		};
+		BC6206381F1F3A3B00FCDC9E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BC62060B1F1F3A3B00FCDC9E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BC6206121F1F3A3B00FCDC9E;
+			remoteInfo = "Luban-iOS";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BC6206131F1F3A3B00FCDC9E /* Luban-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Luban-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC6206171F1F3A3B00FCDC9E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		BC6206191F1F3A3B00FCDC9E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		BC62061A1F1F3A3B00FCDC9E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		BC62061C1F1F3A3B00FCDC9E /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = ../ViewController.h; sourceTree = "<group>"; };
+		BC62061D1F1F3A3B00FCDC9E /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = ../ViewController.m; sourceTree = "<group>"; };
+		BC6206201F1F3A3B00FCDC9E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BC6206221F1F3A3B00FCDC9E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../Assets.xcassets; sourceTree = "<group>"; };
+		BC6206251F1F3A3B00FCDC9E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BC6206271F1F3A3B00FCDC9E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BC62062C1F1F3A3B00FCDC9E /* Luban-iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Luban-iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC6206301F1F3A3B00FCDC9E /* Luban_iOSTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Luban_iOSTests.m; sourceTree = "<group>"; };
+		BC6206321F1F3A3B00FCDC9E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BC6206371F1F3A3B00FCDC9E /* Luban-iOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Luban-iOSUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC62063B1F1F3A3B00FCDC9E /* Luban_iOSUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Luban_iOSUITests.m; sourceTree = "<group>"; };
+		BC62063D1F1F3A3B00FCDC9E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BC6206511F20AF3000FCDC9E /* PhotoBrowserViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PhotoBrowserViewController.h; path = ../PhotoBrowserViewController.h; sourceTree = "<group>"; };
+		BC6206521F20AF3000FCDC9E /* PhotoBrowserViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PhotoBrowserViewController.m; path = ../PhotoBrowserViewController.m; sourceTree = "<group>"; };
+		BC6206551F20BAB000FCDC9E /* UIImage+Luban_iOS_Extension_h.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Luban_iOS_Extension_h.h"; sourceTree = "<group>"; };
+		BC6206561F20BAB000FCDC9E /* UIImage+Luban_iOS_Extension_h.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Luban_iOS_Extension_h.m"; sourceTree = "<group>"; };
+		BC62065A1F21E2F600FCDC9E /* ModalTransitionAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModalTransitionAnimator.h; sourceTree = "<group>"; };
+		BC62065B1F21E2F600FCDC9E /* ModalTransitionAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModalTransitionAnimator.m; sourceTree = "<group>"; };
+		BC62065E1F22012C00FCDC9E /* IMG_1998.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_1998.JPG; sourceTree = "<group>"; };
+		BC6206621F22084B00FCDC9E /* MacroFile.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MacroFile.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BC6206101F1F3A3B00FCDC9E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC6206291F1F3A3B00FCDC9E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC6206341F1F3A3B00FCDC9E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BC62060A1F1F3A3B00FCDC9E = {
+			isa = PBXGroup;
+			children = (
+				BC6206151F1F3A3B00FCDC9E /* Luban-iOS */,
+				BC62062F1F1F3A3B00FCDC9E /* Luban-iOSTests */,
+				BC62063A1F1F3A3B00FCDC9E /* Luban-iOSUITests */,
+				BC6206141F1F3A3B00FCDC9E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BC6206141F1F3A3B00FCDC9E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BC6206131F1F3A3B00FCDC9E /* Luban-iOS.app */,
+				BC62062C1F1F3A3B00FCDC9E /* Luban-iOSTests.xctest */,
+				BC6206371F1F3A3B00FCDC9E /* Luban-iOSUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BC6206151F1F3A3B00FCDC9E /* Luban-iOS */ = {
+			isa = PBXGroup;
+			children = (
+				BC62065D1F22012C00FCDC9E /* Resource */,
+				BC6206541F20BA5600FCDC9E /* Category */,
+				BC6206591F21E2A700FCDC9E /* Transition */,
+				BC6206581F21E2A700FCDC9E /* Controller */,
+				BC6206191F1F3A3B00FCDC9E /* AppDelegate.h */,
+				BC62061A1F1F3A3B00FCDC9E /* AppDelegate.m */,
+				BC62061F1F1F3A3B00FCDC9E /* Main.storyboard */,
+				BC6206241F1F3A3B00FCDC9E /* LaunchScreen.storyboard */,
+				BC6206271F1F3A3B00FCDC9E /* Info.plist */,
+				BC6206621F22084B00FCDC9E /* MacroFile.h */,
+				BC6206161F1F3A3B00FCDC9E /* Supporting Files */,
+			);
+			path = "Luban-iOS";
+			sourceTree = "<group>";
+		};
+		BC6206161F1F3A3B00FCDC9E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BC6206171F1F3A3B00FCDC9E /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BC62062F1F1F3A3B00FCDC9E /* Luban-iOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				BC6206301F1F3A3B00FCDC9E /* Luban_iOSTests.m */,
+				BC6206321F1F3A3B00FCDC9E /* Info.plist */,
+			);
+			path = "Luban-iOSTests";
+			sourceTree = "<group>";
+		};
+		BC62063A1F1F3A3B00FCDC9E /* Luban-iOSUITests */ = {
+			isa = PBXGroup;
+			children = (
+				BC62063B1F1F3A3B00FCDC9E /* Luban_iOSUITests.m */,
+				BC62063D1F1F3A3B00FCDC9E /* Info.plist */,
+			);
+			path = "Luban-iOSUITests";
+			sourceTree = "<group>";
+		};
+		BC6206541F20BA5600FCDC9E /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				BC6206551F20BAB000FCDC9E /* UIImage+Luban_iOS_Extension_h.h */,
+				BC6206561F20BAB000FCDC9E /* UIImage+Luban_iOS_Extension_h.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		BC6206581F21E2A700FCDC9E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				BC62061C1F1F3A3B00FCDC9E /* ViewController.h */,
+				BC62061D1F1F3A3B00FCDC9E /* ViewController.m */,
+				BC6206511F20AF3000FCDC9E /* PhotoBrowserViewController.h */,
+				BC6206521F20AF3000FCDC9E /* PhotoBrowserViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		BC6206591F21E2A700FCDC9E /* Transition */ = {
+			isa = PBXGroup;
+			children = (
+				BC62065A1F21E2F600FCDC9E /* ModalTransitionAnimator.h */,
+				BC62065B1F21E2F600FCDC9E /* ModalTransitionAnimator.m */,
+			);
+			path = Transition;
+			sourceTree = "<group>";
+		};
+		BC62065D1F22012C00FCDC9E /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				BC6206221F1F3A3B00FCDC9E /* Assets.xcassets */,
+				BC62065E1F22012C00FCDC9E /* IMG_1998.JPG */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BC6206121F1F3A3B00FCDC9E /* Luban-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BC6206401F1F3A3B00FCDC9E /* Build configuration list for PBXNativeTarget "Luban-iOS" */;
+			buildPhases = (
+				BC62060F1F1F3A3B00FCDC9E /* Sources */,
+				BC6206101F1F3A3B00FCDC9E /* Frameworks */,
+				BC6206111F1F3A3B00FCDC9E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Luban-iOS";
+			productName = "Luban-iOS";
+			productReference = BC6206131F1F3A3B00FCDC9E /* Luban-iOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BC62062B1F1F3A3B00FCDC9E /* Luban-iOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BC6206431F1F3A3B00FCDC9E /* Build configuration list for PBXNativeTarget "Luban-iOSTests" */;
+			buildPhases = (
+				BC6206281F1F3A3B00FCDC9E /* Sources */,
+				BC6206291F1F3A3B00FCDC9E /* Frameworks */,
+				BC62062A1F1F3A3B00FCDC9E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BC62062E1F1F3A3B00FCDC9E /* PBXTargetDependency */,
+			);
+			name = "Luban-iOSTests";
+			productName = "Luban-iOSTests";
+			productReference = BC62062C1F1F3A3B00FCDC9E /* Luban-iOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BC6206361F1F3A3B00FCDC9E /* Luban-iOSUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BC6206461F1F3A3B00FCDC9E /* Build configuration list for PBXNativeTarget "Luban-iOSUITests" */;
+			buildPhases = (
+				BC6206331F1F3A3B00FCDC9E /* Sources */,
+				BC6206341F1F3A3B00FCDC9E /* Frameworks */,
+				BC6206351F1F3A3B00FCDC9E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BC6206391F1F3A3B00FCDC9E /* PBXTargetDependency */,
+			);
+			name = "Luban-iOSUITests";
+			productName = "Luban-iOSUITests";
+			productReference = BC6206371F1F3A3B00FCDC9E /* Luban-iOSUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BC62060B1F1F3A3B00FCDC9E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = guo;
+				TargetAttributes = {
+					BC6206121F1F3A3B00FCDC9E = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = 8JAJ87K5LP;
+						ProvisioningStyle = Automatic;
+					};
+					BC62062B1F1F3A3B00FCDC9E = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = 8JAJ87K5LP;
+						ProvisioningStyle = Automatic;
+						TestTargetID = BC6206121F1F3A3B00FCDC9E;
+					};
+					BC6206361F1F3A3B00FCDC9E = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = 8JAJ87K5LP;
+						ProvisioningStyle = Automatic;
+						TestTargetID = BC6206121F1F3A3B00FCDC9E;
+					};
+				};
+			};
+			buildConfigurationList = BC62060E1F1F3A3B00FCDC9E /* Build configuration list for PBXProject "Luban-iOS" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BC62060A1F1F3A3B00FCDC9E;
+			productRefGroup = BC6206141F1F3A3B00FCDC9E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BC6206121F1F3A3B00FCDC9E /* Luban-iOS */,
+				BC62062B1F1F3A3B00FCDC9E /* Luban-iOSTests */,
+				BC6206361F1F3A3B00FCDC9E /* Luban-iOSUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BC6206111F1F3A3B00FCDC9E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC6206261F1F3A3B00FCDC9E /* LaunchScreen.storyboard in Resources */,
+				BC6206231F1F3A3B00FCDC9E /* Assets.xcassets in Resources */,
+				BC62065F1F22012C00FCDC9E /* IMG_1998.JPG in Resources */,
+				BC6206211F1F3A3B00FCDC9E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC62062A1F1F3A3B00FCDC9E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC6206351F1F3A3B00FCDC9E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BC62060F1F1F3A3B00FCDC9E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC6206531F20AF3000FCDC9E /* PhotoBrowserViewController.m in Sources */,
+				BC62065C1F21E2F600FCDC9E /* ModalTransitionAnimator.m in Sources */,
+				BC6206571F20BAB000FCDC9E /* UIImage+Luban_iOS_Extension_h.m in Sources */,
+				BC62061E1F1F3A3B00FCDC9E /* ViewController.m in Sources */,
+				BC62061B1F1F3A3B00FCDC9E /* AppDelegate.m in Sources */,
+				BC6206181F1F3A3B00FCDC9E /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC6206281F1F3A3B00FCDC9E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC6206311F1F3A3B00FCDC9E /* Luban_iOSTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC6206331F1F3A3B00FCDC9E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC62063C1F1F3A3B00FCDC9E /* Luban_iOSUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BC62062E1F1F3A3B00FCDC9E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BC6206121F1F3A3B00FCDC9E /* Luban-iOS */;
+			targetProxy = BC62062D1F1F3A3B00FCDC9E /* PBXContainerItemProxy */;
+		};
+		BC6206391F1F3A3B00FCDC9E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BC6206121F1F3A3B00FCDC9E /* Luban-iOS */;
+			targetProxy = BC6206381F1F3A3B00FCDC9E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BC62061F1F1F3A3B00FCDC9E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BC6206201F1F3A3B00FCDC9E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BC6206241F1F3A3B00FCDC9E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BC6206251F1F3A3B00FCDC9E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BC62063E1F1F3A3B00FCDC9E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BC62063F1F1F3A3B00FCDC9E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BC6206411F1F3A3B00FCDC9E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 8JAJ87K5LP;
+				INFOPLIST_FILE = "Luban-iOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "lianjia.Luban-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+			};
+			name = Debug;
+		};
+		BC6206421F1F3A3B00FCDC9E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 8JAJ87K5LP;
+				INFOPLIST_FILE = "Luban-iOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "lianjia.Luban-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+			};
+			name = Release;
+		};
+		BC6206441F1F3A3B00FCDC9E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 8JAJ87K5LP;
+				INFOPLIST_FILE = "Luban-iOSTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "lianjia.Luban-iOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Luban-iOS.app/Luban-iOS";
+			};
+			name = Debug;
+		};
+		BC6206451F1F3A3B00FCDC9E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 8JAJ87K5LP;
+				INFOPLIST_FILE = "Luban-iOSTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "lianjia.Luban-iOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Luban-iOS.app/Luban-iOS";
+			};
+			name = Release;
+		};
+		BC6206471F1F3A3B00FCDC9E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 8JAJ87K5LP;
+				INFOPLIST_FILE = "Luban-iOSUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "lianjia.Luban-iOSUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Luban-iOS";
+			};
+			name = Debug;
+		};
+		BC6206481F1F3A3B00FCDC9E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 8JAJ87K5LP;
+				INFOPLIST_FILE = "Luban-iOSUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "lianjia.Luban-iOSUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Luban-iOS";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BC62060E1F1F3A3B00FCDC9E /* Build configuration list for PBXProject "Luban-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC62063E1F1F3A3B00FCDC9E /* Debug */,
+				BC62063F1F1F3A3B00FCDC9E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BC6206401F1F3A3B00FCDC9E /* Build configuration list for PBXNativeTarget "Luban-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC6206411F1F3A3B00FCDC9E /* Debug */,
+				BC6206421F1F3A3B00FCDC9E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BC6206431F1F3A3B00FCDC9E /* Build configuration list for PBXNativeTarget "Luban-iOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC6206441F1F3A3B00FCDC9E /* Debug */,
+				BC6206451F1F3A3B00FCDC9E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BC6206461F1F3A3B00FCDC9E /* Build configuration list for PBXNativeTarget "Luban-iOSUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC6206471F1F3A3B00FCDC9E /* Debug */,
+				BC6206481F1F3A3B00FCDC9E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BC62060B1F1F3A3B00FCDC9E /* Project object */;
+}
