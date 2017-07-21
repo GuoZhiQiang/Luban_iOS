@@ -54,7 +54,7 @@ Pod::Spec.new do |s|
   # ――― Source Location ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   s.source = { :git => "https://github.com/GuoZhiQiang/Luban-iOS.git", :tag => "1.0.0" }
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
-  s.source_files  = "Luban-iOS/Category/UIImage+Luban_iOS_Extension_h/*.{h,m}"
+  s.source_files  = "Luban_iOS_Extension_h/*.{h,m}"
   # ――― Project Settings ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   s.requires_arc = true
 

@@ -16,7 +16,6 @@
 		BC6206311F1F3A3B00FCDC9E /* Luban_iOSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BC6206301F1F3A3B00FCDC9E /* Luban_iOSTests.m */; };
 		BC62063C1F1F3A3B00FCDC9E /* Luban_iOSUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = BC62063B1F1F3A3B00FCDC9E /* Luban_iOSUITests.m */; };
 		BC6206531F20AF3000FCDC9E /* PhotoBrowserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC6206521F20AF3000FCDC9E /* PhotoBrowserViewController.m */; };
-		BC6206571F20BAB000FCDC9E /* UIImage+Luban_iOS_Extension_h.m in Sources */ = {isa = PBXBuildFile; fileRef = BC6206561F20BAB000FCDC9E /* UIImage+Luban_iOS_Extension_h.m */; };
 		BC62065C1F21E2F600FCDC9E /* ModalTransitionAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = BC62065B1F21E2F600FCDC9E /* ModalTransitionAnimator.m */; };
 		BC62065F1F22012C00FCDC9E /* IMG_1998.JPG in Resources */ = {isa = PBXBuildFile; fileRef = BC62065E1F22012C00FCDC9E /* IMG_1998.JPG */; };
 /* End PBXBuildFile section */
@@ -57,8 +56,6 @@
 		BC62063D1F1F3A3B00FCDC9E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BC6206511F20AF3000FCDC9E /* PhotoBrowserViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PhotoBrowserViewController.h; path = ../PhotoBrowserViewController.h; sourceTree = "<group>"; };
 		BC6206521F20AF3000FCDC9E /* PhotoBrowserViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PhotoBrowserViewController.m; path = ../PhotoBrowserViewController.m; sourceTree = "<group>"; };
-		BC6206551F20BAB000FCDC9E /* UIImage+Luban_iOS_Extension_h.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Luban_iOS_Extension_h.h"; sourceTree = "<group>"; };
-		BC6206561F20BAB000FCDC9E /* UIImage+Luban_iOS_Extension_h.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Luban_iOS_Extension_h.m"; sourceTree = "<group>"; };
 		BC62065A1F21E2F600FCDC9E /* ModalTransitionAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModalTransitionAnimator.h; sourceTree = "<group>"; };
 		BC62065B1F21E2F600FCDC9E /* ModalTransitionAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModalTransitionAnimator.m; sourceTree = "<group>"; };
 		BC62065E1F22012C00FCDC9E /* IMG_1998.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_1998.JPG; sourceTree = "<group>"; };
@@ -114,7 +111,6 @@
 			isa = PBXGroup;
 			children = (
 				BC62065D1F22012C00FCDC9E /* Resource */,
-				BC6206541F20BA5600FCDC9E /* Category */,
 				BC6206591F21E2A700FCDC9E /* Transition */,
 				BC6206581F21E2A700FCDC9E /* Controller */,
 				BC6206191F1F3A3B00FCDC9E /* AppDelegate.h */,
@@ -152,15 +148,6 @@
 				BC62063D1F1F3A3B00FCDC9E /* Info.plist */,
 			);
 			path = "Luban-iOSUITests";
-			sourceTree = "<group>";
-		};
-		BC6206541F20BA5600FCDC9E /* Category */ = {
-			isa = PBXGroup;
-			children = (
-				BC6206551F20BAB000FCDC9E /* UIImage+Luban_iOS_Extension_h.h */,
-				BC6206561F20BAB000FCDC9E /* UIImage+Luban_iOS_Extension_h.m */,
-			);
-			path = Category;
 			sourceTree = "<group>";
 		};
 		BC6206581F21E2A700FCDC9E /* Controller */ = {
@@ -331,7 +318,6 @@
 			files = (
 				BC6206531F20AF3000FCDC9E /* PhotoBrowserViewController.m in Sources */,
 				BC62065C1F21E2F600FCDC9E /* ModalTransitionAnimator.m in Sources */,
-				BC6206571F20BAB000FCDC9E /* UIImage+Luban_iOS_Extension_h.m in Sources */,
 				BC62061E1F1F3A3B00FCDC9E /* ViewController.m in Sources */,
 				BC62061B1F1F3A3B00FCDC9E /* AppDelegate.m in Sources */,
 				BC6206181F1F3A3B00FCDC9E /* main.m in Sources */,
