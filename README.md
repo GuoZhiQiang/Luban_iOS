@@ -20,6 +20,12 @@
  - 在 `Podfile` 文件里添加`pod 'Luban_iOS'`
 
    然后在终端运行 `pod install`
+   
+   >注意：如果使用 `pod search Luban_iOS` or `pod search Luban-iOS` 搜不到，那么，你需要
+  ```
+   pod setup
+   rm -rf ~/Library/Caches/Cocoapods
+  ```
 
 ### 使用.Usage
 - 下载 Demo 试玩一下,看一下输出,点一下图片看压缩后的效果大图
