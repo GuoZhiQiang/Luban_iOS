@@ -1,3 +1,5 @@
+- 带有演示效果图 `gif`，请查看 [详细说明](http://www.jianshu.com/p/7bb78eed7826)
+
 # Luban-iOS
 - 借鉴 [Android 鲁班](https://github.com/Curzibn/Luban)核心压缩算法，生成的 iOS 版 压缩代码
 
