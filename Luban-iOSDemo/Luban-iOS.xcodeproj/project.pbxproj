@@ -7,17 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		BC6206181F1F3A3B00FCDC9E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BC6206171F1F3A3B00FCDC9E /* main.m */; };
-		BC62061B1F1F3A3B00FCDC9E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BC62061A1F1F3A3B00FCDC9E /* AppDelegate.m */; };
-		BC62061E1F1F3A3B00FCDC9E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC62061D1F1F3A3B00FCDC9E /* ViewController.m */; };
-		BC6206211F1F3A3B00FCDC9E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC62061F1F1F3A3B00FCDC9E /* Main.storyboard */; };
-		BC6206231F1F3A3B00FCDC9E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC6206221F1F3A3B00FCDC9E /* Assets.xcassets */; };
-		BC6206261F1F3A3B00FCDC9E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC6206241F1F3A3B00FCDC9E /* LaunchScreen.storyboard */; };
 		BC6206311F1F3A3B00FCDC9E /* Luban_iOSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BC6206301F1F3A3B00FCDC9E /* Luban_iOSTests.m */; };
 		BC62063C1F1F3A3B00FCDC9E /* Luban_iOSUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = BC62063B1F1F3A3B00FCDC9E /* Luban_iOSUITests.m */; };
-		BC6206531F20AF3000FCDC9E /* PhotoBrowserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC6206521F20AF3000FCDC9E /* PhotoBrowserViewController.m */; };
-		BC62065C1F21E2F600FCDC9E /* ModalTransitionAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = BC62065B1F21E2F600FCDC9E /* ModalTransitionAnimator.m */; };
-		BC62065F1F22012C00FCDC9E /* IMG_1998.JPG in Resources */ = {isa = PBXBuildFile; fileRef = BC62065E1F22012C00FCDC9E /* IMG_1998.JPG */; };
+		BC6206731F25C78800FCDC9E /* PhotoBrowserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC62066B1F25C78800FCDC9E /* PhotoBrowserViewController.m */; };
+		BC6206741F25C78800FCDC9E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC62066D1F25C78800FCDC9E /* ViewController.m */; };
+		BC6206751F25C78800FCDC9E /* IMG_1998.JPG in Resources */ = {isa = PBXBuildFile; fileRef = BC62066F1F25C78800FCDC9E /* IMG_1998.JPG */; };
+		BC6206761F25C78800FCDC9E /* ModalTransitionAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = BC6206721F25C78800FCDC9E /* ModalTransitionAnimator.m */; };
+		BC62067A1F25C82900FCDC9E /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BC6206771F25C82900FCDC9E /* Info.plist */; };
+		BC62067B1F25C82900FCDC9E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BC6206791F25C82900FCDC9E /* main.m */; };
+		BC62067D1F25C87D00FCDC9E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC62067C1F25C87D00FCDC9E /* Assets.xcassets */; };
+		BC6206801F25C8A300FCDC9E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC62067E1F25C8A300FCDC9E /* LaunchScreen.storyboard */; };
+		BC6206811F25C8A300FCDC9E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC62067F1F25C8A300FCDC9E /* Main.storyboard */; };
+		BC6206841F25C8C000FCDC9E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BC6206831F25C8C000FCDC9E /* AppDelegate.m */; };
+		BC62068C1F25C95100FCDC9E /* UIImage+Luban_iOS_Extension_h.m in Sources */ = {isa = PBXBuildFile; fileRef = BC62068B1F25C95100FCDC9E /* UIImage+Luban_iOS_Extension_h.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,27 +41,29 @@
 
 /* Begin PBXFileReference section */
 		BC6206131F1F3A3B00FCDC9E /* Luban-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Luban-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		BC6206171F1F3A3B00FCDC9E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		BC6206191F1F3A3B00FCDC9E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		BC62061A1F1F3A3B00FCDC9E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		BC62061C1F1F3A3B00FCDC9E /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = ../ViewController.h; sourceTree = "<group>"; };
-		BC62061D1F1F3A3B00FCDC9E /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = ../ViewController.m; sourceTree = "<group>"; };
-		BC6206201F1F3A3B00FCDC9E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		BC6206221F1F3A3B00FCDC9E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../Assets.xcassets; sourceTree = "<group>"; };
-		BC6206251F1F3A3B00FCDC9E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		BC6206271F1F3A3B00FCDC9E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BC62062C1F1F3A3B00FCDC9E /* Luban-iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Luban-iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC6206301F1F3A3B00FCDC9E /* Luban_iOSTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Luban_iOSTests.m; sourceTree = "<group>"; };
 		BC6206321F1F3A3B00FCDC9E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BC6206371F1F3A3B00FCDC9E /* Luban-iOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Luban-iOSUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC62063B1F1F3A3B00FCDC9E /* Luban_iOSUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Luban_iOSUITests.m; sourceTree = "<group>"; };
 		BC62063D1F1F3A3B00FCDC9E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BC6206511F20AF3000FCDC9E /* PhotoBrowserViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PhotoBrowserViewController.h; path = ../PhotoBrowserViewController.h; sourceTree = "<group>"; };
-		BC6206521F20AF3000FCDC9E /* PhotoBrowserViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PhotoBrowserViewController.m; path = ../PhotoBrowserViewController.m; sourceTree = "<group>"; };
-		BC62065A1F21E2F600FCDC9E /* ModalTransitionAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModalTransitionAnimator.h; sourceTree = "<group>"; };
-		BC62065B1F21E2F600FCDC9E /* ModalTransitionAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModalTransitionAnimator.m; sourceTree = "<group>"; };
-		BC62065E1F22012C00FCDC9E /* IMG_1998.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_1998.JPG; sourceTree = "<group>"; };
-		BC6206621F22084B00FCDC9E /* MacroFile.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MacroFile.h; sourceTree = "<group>"; };
+		BC62066A1F25C78800FCDC9E /* PhotoBrowserViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoBrowserViewController.h; sourceTree = "<group>"; };
+		BC62066B1F25C78800FCDC9E /* PhotoBrowserViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoBrowserViewController.m; sourceTree = "<group>"; };
+		BC62066C1F25C78800FCDC9E /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		BC62066D1F25C78800FCDC9E /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		BC62066F1F25C78800FCDC9E /* IMG_1998.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_1998.JPG; sourceTree = "<group>"; };
+		BC6206711F25C78800FCDC9E /* ModalTransitionAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModalTransitionAnimator.h; sourceTree = "<group>"; };
+		BC6206721F25C78800FCDC9E /* ModalTransitionAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModalTransitionAnimator.m; sourceTree = "<group>"; };
+		BC6206771F25C82900FCDC9E /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BC6206781F25C82900FCDC9E /* MacroFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MacroFile.h; sourceTree = "<group>"; };
+		BC6206791F25C82900FCDC9E /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		BC62067C1F25C87D00FCDC9E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BC62067E1F25C8A300FCDC9E /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BC62067F1F25C8A300FCDC9E /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		BC6206821F25C8C000FCDC9E /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		BC6206831F25C8C000FCDC9E /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		BC62068A1F25C95100FCDC9E /* UIImage+Luban_iOS_Extension_h.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Luban_iOS_Extension_h.h"; sourceTree = "<group>"; };
+		BC62068B1F25C95100FCDC9E /* UIImage+Luban_iOS_Extension_h.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Luban_iOS_Extension_h.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,15 +114,11 @@
 		BC6206151F1F3A3B00FCDC9E /* Luban-iOS */ = {
 			isa = PBXGroup;
 			children = (
-				BC62065D1F22012C00FCDC9E /* Resource */,
-				BC6206591F21E2A700FCDC9E /* Transition */,
-				BC6206581F21E2A700FCDC9E /* Controller */,
-				BC6206191F1F3A3B00FCDC9E /* AppDelegate.h */,
-				BC62061A1F1F3A3B00FCDC9E /* AppDelegate.m */,
-				BC62061F1F1F3A3B00FCDC9E /* Main.storyboard */,
-				BC6206241F1F3A3B00FCDC9E /* LaunchScreen.storyboard */,
-				BC6206271F1F3A3B00FCDC9E /* Info.plist */,
-				BC6206621F22084B00FCDC9E /* MacroFile.h */,
+				BC62067E1F25C8A300FCDC9E /* LaunchScreen.storyboard */,
+				BC62067F1F25C8A300FCDC9E /* Main.storyboard */,
+				BC6206691F25C78800FCDC9E /* Controller */,
+				BC62066E1F25C78800FCDC9E /* Resource */,
+				BC6206701F25C78800FCDC9E /* Transition */,
 				BC6206161F1F3A3B00FCDC9E /* Supporting Files */,
 			);
 			path = "Luban-iOS";
@@ -127,7 +127,9 @@
 		BC6206161F1F3A3B00FCDC9E /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				BC6206171F1F3A3B00FCDC9E /* main.m */,
+				BC6206771F25C82900FCDC9E /* Info.plist */,
+				BC6206781F25C82900FCDC9E /* MacroFile.h */,
+				BC6206791F25C82900FCDC9E /* main.m */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -150,33 +152,45 @@
 			path = "Luban-iOSUITests";
 			sourceTree = "<group>";
 		};
-		BC6206581F21E2A700FCDC9E /* Controller */ = {
+		BC6206691F25C78800FCDC9E /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				BC62061C1F1F3A3B00FCDC9E /* ViewController.h */,
-				BC62061D1F1F3A3B00FCDC9E /* ViewController.m */,
-				BC6206511F20AF3000FCDC9E /* PhotoBrowserViewController.h */,
-				BC6206521F20AF3000FCDC9E /* PhotoBrowserViewController.m */,
+				BC6206891F25C95100FCDC9E /* Luban_iOS_Extension_h */,
+				BC6206821F25C8C000FCDC9E /* AppDelegate.h */,
+				BC6206831F25C8C000FCDC9E /* AppDelegate.m */,
+				BC62066A1F25C78800FCDC9E /* PhotoBrowserViewController.h */,
+				BC62066B1F25C78800FCDC9E /* PhotoBrowserViewController.m */,
+				BC62066C1F25C78800FCDC9E /* ViewController.h */,
+				BC62066D1F25C78800FCDC9E /* ViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
 		};
-		BC6206591F21E2A700FCDC9E /* Transition */ = {
+		BC62066E1F25C78800FCDC9E /* Resource */ = {
 			isa = PBXGroup;
 			children = (
-				BC62065A1F21E2F600FCDC9E /* ModalTransitionAnimator.h */,
-				BC62065B1F21E2F600FCDC9E /* ModalTransitionAnimator.m */,
+				BC62067C1F25C87D00FCDC9E /* Assets.xcassets */,
+				BC62066F1F25C78800FCDC9E /* IMG_1998.JPG */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		BC6206701F25C78800FCDC9E /* Transition */ = {
+			isa = PBXGroup;
+			children = (
+				BC6206711F25C78800FCDC9E /* ModalTransitionAnimator.h */,
+				BC6206721F25C78800FCDC9E /* ModalTransitionAnimator.m */,
 			);
 			path = Transition;
 			sourceTree = "<group>";
 		};
-		BC62065D1F22012C00FCDC9E /* Resource */ = {
+		BC6206891F25C95100FCDC9E /* Luban_iOS_Extension_h */ = {
 			isa = PBXGroup;
 			children = (
-				BC6206221F1F3A3B00FCDC9E /* Assets.xcassets */,
-				BC62065E1F22012C00FCDC9E /* IMG_1998.JPG */,
+				BC62068A1F25C95100FCDC9E /* UIImage+Luban_iOS_Extension_h.h */,
+				BC62068B1F25C95100FCDC9E /* UIImage+Luban_iOS_Extension_h.m */,
 			);
-			path = Resource;
+			path = Luban_iOS_Extension_h;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -288,10 +302,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BC6206261F1F3A3B00FCDC9E /* LaunchScreen.storyboard in Resources */,
-				BC6206231F1F3A3B00FCDC9E /* Assets.xcassets in Resources */,
-				BC62065F1F22012C00FCDC9E /* IMG_1998.JPG in Resources */,
-				BC6206211F1F3A3B00FCDC9E /* Main.storyboard in Resources */,
+				BC62067A1F25C82900FCDC9E /* Info.plist in Resources */,
+				BC6206811F25C8A300FCDC9E /* Main.storyboard in Resources */,
+				BC6206801F25C8A300FCDC9E /* LaunchScreen.storyboard in Resources */,
+				BC62067D1F25C87D00FCDC9E /* Assets.xcassets in Resources */,
+				BC6206751F25C78800FCDC9E /* IMG_1998.JPG in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -316,11 +331,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BC6206531F20AF3000FCDC9E /* PhotoBrowserViewController.m in Sources */,
-				BC62065C1F21E2F600FCDC9E /* ModalTransitionAnimator.m in Sources */,
-				BC62061E1F1F3A3B00FCDC9E /* ViewController.m in Sources */,
-				BC62061B1F1F3A3B00FCDC9E /* AppDelegate.m in Sources */,
-				BC6206181F1F3A3B00FCDC9E /* main.m in Sources */,
+				BC6206741F25C78800FCDC9E /* ViewController.m in Sources */,
+				BC6206761F25C78800FCDC9E /* ModalTransitionAnimator.m in Sources */,
+				BC62067B1F25C82900FCDC9E /* main.m in Sources */,
+				BC62068C1F25C95100FCDC9E /* UIImage+Luban_iOS_Extension_h.m in Sources */,
+				BC6206731F25C78800FCDC9E /* PhotoBrowserViewController.m in Sources */,
+				BC6206841F25C8C000FCDC9E /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -354,25 +370,6 @@
 			targetProxy = BC6206381F1F3A3B00FCDC9E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		BC62061F1F1F3A3B00FCDC9E /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				BC6206201F1F3A3B00FCDC9E /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		BC6206241F1F3A3B00FCDC9E /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				BC6206251F1F3A3B00FCDC9E /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		BC62063E1F1F3A3B00FCDC9E /* Debug */ = {
