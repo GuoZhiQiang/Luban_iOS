@@ -1,5 +1,8 @@
 - 带有演示效果图 `gif`，请查看 [详细说明](http://www.jianshu.com/p/7bb78eed7826)
 
+# 更新
+- 现在可以添加自定义文字 **水印** 了
+
 # Luban-iOS
 - 借鉴 [Android 鲁班](https://github.com/Curzibn/Luban)核心压缩算法，生成的 iOS 版 压缩代码
 
@@ -36,19 +39,21 @@
 - 方法调用 
 
   `[UIImage lubanCompressImage:image]` **or**
-  `[UIImage lubanCompressImage:image withMask:maskName]`
+  `[UIImage lubanCompressImage:image withMask:maskName]` **or**
+  `[UIImage lubanCompressImage:image withCustomImage:imageName]`
 
 - 参数说明
 
  ```
 /*
   image:    UIImage 对象
-  withMask: 添加水印图片名字 (NSString)
+  withMask: 添加水印名字 (NSString)
+  withCustomImage: 水印图片名称
 */
 ```
 - 注意：
- 添加水印时，必须提供水印图片，才能根据名字找到图片
+ 想使用自定义文字水印的请使用方法：`[UIImage lubanCompressImage:image withMask:maskName]`
+ 添加水印时，想使用自定义图片水印的请使用方法：`[UIImage lubanCompressImage:image withCustomImage:imageName]` 
 
 ### 后续添加的功能.Further
- - 水印支持输入文字，而不是用水印图
  - 可以根据一个本地路径，进行压缩并存储
