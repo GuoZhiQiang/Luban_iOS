@@ -2,6 +2,7 @@
 
 # 更新
 - 现在可以添加自定义文字 **水印** 了
+- 对应的调用方法：`[UIImage lubanCompressImage:image withMask:maskName]`
 
 # Luban-iOS
 - 借鉴 [Android 鲁班](https://github.com/Curzibn/Luban)核心压缩算法，生成的 iOS 版 压缩代码
@@ -39,7 +40,9 @@
 - 方法调用 
 
   `[UIImage lubanCompressImage:image]` **or**
+  
   `[UIImage lubanCompressImage:image withMask:maskName]` **or**
+  
   `[UIImage lubanCompressImage:image withCustomImage:imageName]`
 
 - 参数说明
