@@ -6,9 +6,13 @@
 //  Copyright © 2017年 guo. All rights reserved.
 //
 
+#import <objc/runtime.h>
 #import "UIImage+Luban_iOS_Extension_h.h"
 
 @implementation UIImage (Luban_iOS_Extension_h)
+
+static char isCustomImage;
+static char customImageName;
 
 + (UIImage *)lubanCompressImage:(UIImage *)image {
     return [self lubanCompressImage:image withMask:nil];
@@ -78,6 +82,15 @@
     return [self compressWithImage:image thumbW:thumbW thumbH:thumbH size:size withMask:maskName];
 }
 
++ (UIImage *)lubanCompressImage:(UIImage *)image withCustomImage:(NSString *)imageName {
+    
+    if (imageName) {
+        objc_setAssociatedObject(self, &isCustomImage, @(1), OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+        objc_setAssociatedObject(self, &customImageName, imageName, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+    }
+    return [self lubanCompressImage:image withMask:nil];
+}
+
 + (UIImage *)compressWithImage:(UIImage *)image thumbW:(int)width thumbH:(int)height size:(double)size withMask:(NSString *)maskName {
     
     UIImage *thumbImage = [image fixOrientation];
@@ -126,15 +139,31 @@
     
     UIGraphicsBeginImageContext(thumbSize);
     
+    CGContextRef context = UIGraphicsGetCurrentContext();
+    
     [image drawInRect:CGRectMake(0, 0, thumbSize.width, thumbSize.height)];
     if (maskName) {
-        UIImage *imageMask = [UIImage imageNamed:maskName];
-        if (imageMask) {
-            [imageMask drawInRect:CGRectMake(0, 0, thumbSize.width, thumbSize.height)];
+        
+        CGContextTranslateCTM (context, thumbSize.width / 2, thumbSize.height / 2);
+        CGContextScaleCTM (context, 1, -1);
+        
+        [self drawMaskWithString:maskName context:context radius:0 angle:0 colour:[UIColor colorWithRed:1.0  green:1.0 blue:1.0 alpha:0.5] font:[UIFont systemFontOfSize:38.0] slantAngle:(CGFloat)(M_PI/6) size:thumbSize];
+    }
+    else {
+        BOOL iscustom = objc_getAssociatedObject(self, &isCustomImage);
+        
+        if (iscustom) {
+            NSString *imageName = objc_getAssociatedObject(self, &customImageName);
+            UIImage *imageMask = [UIImage imageNamed:imageName];
+            if (imageMask) {
+                [imageMask drawInRect:CGRectMake(0, 0, thumbSize.width, thumbSize.height)];
+            }
         }
     }
     UIImage *resultImage = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
+    
+    objc_setAssociatedObject(self, &isCustomImage, @(NO), OBJC_ASSOCIATION_RETAIN_NONATOMIC);
     
     return resultImage;
 }
@@ -217,6 +246,52 @@
     CGContextRelease(ctx);
     CGImageRelease(cgimg);
     return img;
+}
+
+- (void) drawMaskWithString:(NSString *)str context:(CGContextRef)context radius:(CGFloat)radius angle:(CGFloat)angle colour:(UIColor *)colour font:(UIFont *)font slantAngle:(CGFloat)slantAngle size:(CGSize)size{
+    // *******************************************************
+    // This draws the String str centred at the position
+    // specified by the polar coordinates (r, theta)
+    // i.e. the x= r * cos(theta) y= r * sin(theta)
+    // and rotated by the angle slantAngle
+    // *******************************************************
+    
+    // Set the text attributes
+    NSDictionary *attributes = @{NSForegroundColorAttributeName:colour,
+                                            NSFontAttributeName:font};
+    // Save the context
+    CGContextSaveGState(context);
+    // Undo the inversion of the Y-axis (or the text goes backwards!)
+    CGContextScaleCTM(context, 1, -1);
+    // Move the origin to the centre of the text (negating the y-axis manually)
+    CGContextTranslateCTM(context, radius * cos(angle), -(radius * sin(angle)));
+    // Rotate the coordinate system
+    CGContextRotateCTM(context, -slantAngle);
+    // Calculate the width of the text
+    CGSize offset = [str sizeWithAttributes:attributes];
+    // Move the origin by half the size of the text
+    CGContextTranslateCTM (context, -offset.width / 2, -offset.height / 2); // Move the origin to the centre of the text (negating the y-axis manually)
+    // Draw the text
+    
+    NSInteger width  = ceil(cos(slantAngle)*offset.width);
+    NSInteger height = ceil(sin(slantAngle)*offset.width);
+    
+    NSInteger row    = size.height/(height+100.0);
+    NSInteger coloum = size.width/(width+100.0)>6?:6;
+    CGFloat xPoint   = 0;
+    CGFloat yPoint   = 0;
+    for (NSInteger index = 0; index < row*coloum; index++) {
+        
+        xPoint = (index%coloum) *(width+100.0)-[UIScreen mainScreen].bounds.size.width;
+        yPoint = (index/coloum) *(height+100.0);
+        [str drawAtPoint:CGPointMake(xPoint, yPoint) withAttributes:attributes];
+        xPoint += -[UIScreen mainScreen].bounds.size.width;
+        yPoint += -[UIScreen mainScreen].bounds.size.height;
+        [str drawAtPoint:CGPointMake(xPoint, yPoint) withAttributes:attributes];
+    }
+    
+    // Restore the context
+    CGContextRestoreGState(context);
 }
 
 @end
