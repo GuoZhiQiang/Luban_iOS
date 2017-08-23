@@ -41,9 +41,9 @@
 
   `[UIImage lubanCompressImage:image]` **or**
   
-    `[UIImage lubanCompressImage:image withMask:maskName]` **or**
+  `[UIImage lubanCompressImage:image withMask:maskName]` **or**
   
-    `[UIImage lubanCompressImage:image withCustomImage:imageName]`
+  `[UIImage lubanCompressImage:image withCustomImage:imageName]`
 
 - 参数说明
 
