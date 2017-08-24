@@ -1,7 +1,7 @@
 - 带有演示效果图 `gif`，请查看 [详细说明](http://www.jianshu.com/p/7bb78eed7826)
 
-# 更新
-- 现在可以添加自定义文字 **水印** 了
+# 更新.Update
+- 现在可以添加自定义文字 **水印** 了 | Add custom text as an watermark to your image
 - 对应的调用方法：`[UIImage lubanCompressImage:image withMask:maskName]`
 
 # Luban-iOS
@@ -59,4 +59,5 @@
  添加水印时，想使用自定义图片水印的请使用方法：`[UIImage lubanCompressImage:image withCustomImage:imageName]` 
 
 ### 后续添加的功能.Further
+ - 可以自定义水印旋转角度
  - 可以根据一个本地路径，进行压缩并存储
