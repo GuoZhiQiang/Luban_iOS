@@ -1,6 +1,6 @@
 
 # [Wiki](https://github.com/GuoZhiQiang/Luban_iOS/wiki)
-- 带有演示效果图 `gif`，请查看 [详细说明](http://www.jianshu.com/p/7bb78eed7826)
+- 带有演示效果图 `gif`，请查看 [图文并茂](http://www.jianshu.com/p/7bb78eed7826)
 
 # 更新.Update
 - 现在可以添加自定义文字 **水印** 了 | Add custom text as an watermark to your image
