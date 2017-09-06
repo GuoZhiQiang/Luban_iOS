@@ -1,3 +1,5 @@
+
+# [Wiki](https://github.com/GuoZhiQiang/Luban_iOS.wiki.git)
 - 带有演示效果图 `gif`，请查看 [详细说明](http://www.jianshu.com/p/7bb78eed7826)
 
 # 更新.Update
