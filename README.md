@@ -7,7 +7,7 @@
 - 对应的调用方法：`[UIImage lubanCompressImage:image withMask:maskName]`
 
 # Luban-iOS
-- 借鉴 [Android 鲁班](https://github.com/Curzibn/Luban)核心压缩算法，生成的 iOS 版 压缩代码
+- 借鉴 [Android 鲁班](https://github.com/Curzibn/Luban)压缩库，生成的 iOS 版 压缩代码
 
 ## 压缩比如下表.Compare：
 
