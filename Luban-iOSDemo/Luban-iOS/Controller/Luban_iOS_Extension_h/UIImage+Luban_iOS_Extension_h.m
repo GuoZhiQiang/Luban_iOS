@@ -150,9 +150,9 @@ static char customImageName;
         [self drawMaskWithString:maskName context:context radius:0 angle:0 colour:[UIColor colorWithRed:1.0  green:1.0 blue:1.0 alpha:0.5] font:[UIFont systemFontOfSize:38.0] slantAngle:(CGFloat)(M_PI/6) size:thumbSize];
     }
     else {
-        BOOL iscustom = objc_getAssociatedObject(self, &isCustomImage);
-        
-        if (iscustom) {
+        NSNumber *iscustom = objc_getAssociatedObject(self, &isCustomImage);
+        BOOL      isCustom = [iscustom boolValue];
+        if (isCustom) {
             NSString *imageName = objc_getAssociatedObject(self, &customImageName);
             UIImage *imageMask = [UIImage imageNamed:imageName];
             if (imageMask) {
