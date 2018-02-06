@@ -14,15 +14,15 @@
 static char isCustomImage;
 static char customImageName;
 
-+ (UIImage *)lubanCompressImage:(UIImage *)image {
++ (NSData *)lubanCompressImage:(UIImage *)image {
     return [self lubanCompressImage:image withMask:nil];
 }
-+ (UIImage *)lubanCompressImage:(UIImage *)image withMask:(NSString *)maskName {
++ (NSData *)lubanCompressImage:(UIImage *)image withMask:(NSString *)maskName {
     
     double size;
-    NSData *datalen = UIImageJPEGRepresentation(image, 1);
+    NSData *imageData = UIImageJPEGRepresentation(image, 1);
     
-    NSLog(@"Luban-iOS image data size before compressed == %f Kb",datalen.length/1024.0);
+    NSLog(@"Luban-iOS image data size before compressed == %f Kb",imageData.length/1024.0);
     
     int fixelW = (int)image.size.width;
     int fixelH = (int)image.size.height;
@@ -34,8 +34,8 @@ static char customImageName;
     if (scale <= 1 && scale > 0.5625) {
         
         if (fixelH < 1664) {
-            if (datalen.length/1024.0 < 150) {
-                return image;
+            if (imageData.length/1024.0 < 150) {
+                return imageData;
             }
             size = (fixelW * fixelH) / pow(1664, 2) * 150;
             size = size < 60 ? 60 : size;
@@ -62,9 +62,9 @@ static char customImageName;
     }
     else if (scale <= 0.5625 && scale > 0.5) {
         
-        if (fixelH < 1280 && datalen.length/1024 < 200) {
+        if (fixelH < 1280 && imageData.length/1024 < 200) {
             
-            return image;
+            return imageData;
         }
         int multiple = fixelH / 1280 == 0 ? 1 : fixelH / 1280;
         thumbW = fixelW / multiple;
@@ -82,7 +82,7 @@ static char customImageName;
     return [self compressWithImage:image thumbW:thumbW thumbH:thumbH size:size withMask:maskName];
 }
 
-+ (UIImage *)lubanCompressImage:(UIImage *)image withCustomImage:(NSString *)imageName {
++ (NSData *)lubanCompressImage:(UIImage *)image withCustomImage:(NSString *)imageName {
     
     if (imageName) {
         objc_setAssociatedObject(self, &isCustomImage, @(1), OBJC_ASSOCIATION_RETAIN_NONATOMIC);
@@ -91,25 +91,25 @@ static char customImageName;
     return [self lubanCompressImage:image withMask:nil];
 }
 
-+ (UIImage *)compressWithImage:(UIImage *)image thumbW:(int)width thumbH:(int)height size:(double)size withMask:(NSString *)maskName {
++ (NSData *)compressWithImage:(UIImage *)image thumbW:(int)width thumbH:(int)height size:(double)size withMask:(NSString *)maskName {
     
     UIImage *thumbImage = [image fixOrientation];
     thumbImage = [thumbImage resizeImage:image thumbWidth:width thumbHeight:height withMask:maskName];
     
     int qualityCompress = 1.0;
     
-    NSData *dataLen = UIImageJPEGRepresentation(thumbImage, qualityCompress);
+    NSData *imageData = UIImageJPEGRepresentation(thumbImage, qualityCompress);
     
-    NSUInteger lenght = dataLen.length;
+    NSUInteger lenght = imageData.length;
     while (lenght / 1024 > size && qualityCompress > 0.06) {
         
         qualityCompress -= 0.06;
-        dataLen    = UIImageJPEGRepresentation(thumbImage, qualityCompress);
-        lenght     = dataLen.length;
-        thumbImage = [UIImage imageWithData:dataLen];
+        imageData    = UIImageJPEGRepresentation(thumbImage, qualityCompress);
+        lenght     = imageData.length;
+        thumbImage = [UIImage imageWithData:imageData];
     }
-    NSLog(@"Luban-iOS image data size after compressed ==%f kb",dataLen.length/1024.0);
-    return thumbImage;
+    NSLog(@"Luban-iOS image data size after compressed ==%f kb",imageData.length/1024.0);
+    return imageData;
 }
 
 // specify the size
@@ -150,9 +150,9 @@ static char customImageName;
         [self drawMaskWithString:maskName context:context radius:0 angle:0 colour:[UIColor colorWithRed:1.0  green:1.0 blue:1.0 alpha:0.5] font:[UIFont systemFontOfSize:38.0] slantAngle:(CGFloat)(M_PI/6) size:thumbSize];
     }
     else {
-        BOOL iscustom = objc_getAssociatedObject(self, &isCustomImage);
-        
-        if (iscustom) {
+        NSNumber *iscustom = objc_getAssociatedObject(self, &isCustomImage);
+        BOOL      isCustom = [iscustom boolValue];
+        if (isCustom) {
             NSString *imageName = objc_getAssociatedObject(self, &customImageName);
             UIImage *imageMask = [UIImage imageNamed:imageName];
             if (imageMask) {

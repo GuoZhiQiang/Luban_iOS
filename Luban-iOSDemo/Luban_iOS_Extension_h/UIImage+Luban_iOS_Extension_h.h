@@ -10,8 +10,8 @@
 
 @interface UIImage (Luban_iOS_Extension_h)
 
-+ (UIImage *)lubanCompressImage:(UIImage *)image;
-+ (UIImage *)lubanCompressImage:(UIImage *)image withMask:(NSString *)maskName;
-+ (UIImage *)lubanCompressImage:(UIImage *)image withCustomImage:(NSString *)imageName;
++ (NSData *)lubanCompressImage:(UIImage *)image;
++ (NSData *)lubanCompressImage:(UIImage *)image withMask:(NSString *)maskName;
++ (NSData *)lubanCompressImage:(UIImage *)image withCustomImage:(NSString *)imageName;
 
 @end
