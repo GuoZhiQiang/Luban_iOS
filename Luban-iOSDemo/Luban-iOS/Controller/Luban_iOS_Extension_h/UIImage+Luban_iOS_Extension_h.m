@@ -20,9 +20,9 @@ static char customImageName;
 + (NSData *)lubanCompressImage:(UIImage *)image withMask:(NSString *)maskName {
     
     double size;
-    NSData *datalen = UIImageJPEGRepresentation(image, 1);
+    NSData *imageData = UIImageJPEGRepresentation(image, 1);
     
-    NSLog(@"Luban-iOS image data size before compressed == %f Kb",datalen.length/1024.0);
+    NSLog(@"Luban-iOS image data size before compressed == %f Kb",imageData.length/1024.0);
     
     int fixelW = (int)image.size.width;
     int fixelH = (int)image.size.height;
@@ -34,8 +34,8 @@ static char customImageName;
     if (scale <= 1 && scale > 0.5625) {
         
         if (fixelH < 1664) {
-            if (datalen.length/1024.0 < 150) {
-                return image;
+            if (imageData.length/1024.0 < 150) {
+                return imageData;
             }
             size = (fixelW * fixelH) / pow(1664, 2) * 150;
             size = size < 60 ? 60 : size;
@@ -62,9 +62,9 @@ static char customImageName;
     }
     else if (scale <= 0.5625 && scale > 0.5) {
         
-        if (fixelH < 1280 && datalen.length/1024 < 200) {
+        if (fixelH < 1280 && imageData.length/1024 < 200) {
             
-            return image;
+            return imageData;
         }
         int multiple = fixelH / 1280 == 0 ? 1 : fixelH / 1280;
         thumbW = fixelW / multiple;
