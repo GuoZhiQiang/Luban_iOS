@@ -14,10 +14,10 @@
 static char isCustomImage;
 static char customImageName;
 
-+ (UIImage *)lubanCompressImage:(UIImage *)image {
++ (NSData *)lubanCompressImage:(UIImage *)image {
     return [self lubanCompressImage:image withMask:nil];
 }
-+ (UIImage *)lubanCompressImage:(UIImage *)image withMask:(NSString *)maskName {
++ (NSData *)lubanCompressImage:(UIImage *)image withMask:(NSString *)maskName {
     
     double size;
     NSData *datalen = UIImageJPEGRepresentation(image, 1);
@@ -82,7 +82,7 @@ static char customImageName;
     return [self compressWithImage:image thumbW:thumbW thumbH:thumbH size:size withMask:maskName];
 }
 
-+ (UIImage *)lubanCompressImage:(UIImage *)image withCustomImage:(NSString *)imageName {
++ (NSData *)lubanCompressImage:(UIImage *)image withCustomImage:(NSString *)imageName {
     
     if (imageName) {
         objc_setAssociatedObject(self, &isCustomImage, @(1), OBJC_ASSOCIATION_RETAIN_NONATOMIC);
@@ -91,7 +91,7 @@ static char customImageName;
     return [self lubanCompressImage:image withMask:nil];
 }
 
-+ (UIImage *)compressWithImage:(UIImage *)image thumbW:(int)width thumbH:(int)height size:(double)size withMask:(NSString *)maskName {
++ (NSData *)compressWithImage:(UIImage *)image thumbW:(int)width thumbH:(int)height size:(double)size withMask:(NSString *)maskName {
     
     UIImage *thumbImage = [image fixOrientation];
     thumbImage = [thumbImage resizeImage:image thumbWidth:width thumbHeight:height withMask:maskName];

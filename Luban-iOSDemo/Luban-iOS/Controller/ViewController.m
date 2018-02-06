@@ -33,8 +33,9 @@
 }
 
 - (void)initDataSource {
-    self.imgCompressed     = [UIImage lubanCompressImage:[UIImage imageNamed:@"IMG_1998.JPG"] withMask:@"Luban_iOS"];
-    self.img_brower.image  = _imgCompressed;
+    NSData *imgData       = [UIImage lubanCompressImage:[UIImage imageNamed:@"IMG_1998.JPG"] withMask:@"Luban_iOS"];
+    self.imgCompressed    = [UIImage imageWithData:imgData];
+    self.img_brower.image = _imgCompressed;
 }
 
 - (IBAction)btnClick:(UIButton *)sender {
@@ -71,9 +72,9 @@
 
 - (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingImage:(UIImage *)image editingInfo:(nullable NSDictionary<NSString *,id> *)editingInfo {
     
-    self.imgCompressed = [UIImage lubanCompressImage:image];
-    
-    self.img_brower.image  = _imgCompressed;
+    NSData *imgData       = [UIImage lubanCompressImage:image];
+    self.imgCompressed    = [UIImage imageWithData:imgData];
+    self.img_brower.image = _imgCompressed;
     [picker dismissViewControllerAnimated:YES completion:nil];
 }
 - (void)imagePickerControllerDidCancel:(UIImagePickerController *)picker {

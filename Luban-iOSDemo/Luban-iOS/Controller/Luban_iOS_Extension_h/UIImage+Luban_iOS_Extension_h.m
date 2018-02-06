@@ -14,10 +14,10 @@
 static char isCustomImage;
 static char customImageName;
 
-+ (UIImage *)lubanCompressImage:(UIImage *)image {
++ (NSData *)lubanCompressImage:(UIImage *)image {
     return [self lubanCompressImage:image withMask:nil];
 }
-+ (UIImage *)lubanCompressImage:(UIImage *)image withMask:(NSString *)maskName {
++ (NSData *)lubanCompressImage:(UIImage *)image withMask:(NSString *)maskName {
     
     double size;
     NSData *datalen = UIImageJPEGRepresentation(image, 1);
@@ -82,7 +82,7 @@ static char customImageName;
     return [self compressWithImage:image thumbW:thumbW thumbH:thumbH size:size withMask:maskName];
 }
 
-+ (UIImage *)lubanCompressImage:(UIImage *)image withCustomImage:(NSString *)imageName {
++ (NSData *)lubanCompressImage:(UIImage *)image withCustomImage:(NSString *)imageName {
     
     if (imageName) {
         objc_setAssociatedObject(self, &isCustomImage, @(1), OBJC_ASSOCIATION_RETAIN_NONATOMIC);
@@ -91,25 +91,25 @@ static char customImageName;
     return [self lubanCompressImage:image withMask:nil];
 }
 
-+ (UIImage *)compressWithImage:(UIImage *)image thumbW:(int)width thumbH:(int)height size:(double)size withMask:(NSString *)maskName {
++ (NSData *)compressWithImage:(UIImage *)image thumbW:(int)width thumbH:(int)height size:(double)size withMask:(NSString *)maskName {
     
     UIImage *thumbImage = [image fixOrientation];
     thumbImage = [thumbImage resizeImage:image thumbWidth:width thumbHeight:height withMask:maskName];
     
     int qualityCompress = 1.0;
     
-    NSData *dataLen = UIImageJPEGRepresentation(thumbImage, qualityCompress);
+    NSData *imageData = UIImageJPEGRepresentation(thumbImage, qualityCompress);
     
-    NSUInteger lenght = dataLen.length;
+    NSUInteger lenght = imageData.length;
     while (lenght / 1024 > size && qualityCompress > 0.06) {
         
         qualityCompress -= 0.06;
-        dataLen    = UIImageJPEGRepresentation(thumbImage, qualityCompress);
-        lenght     = dataLen.length;
-        thumbImage = [UIImage imageWithData:dataLen];
+        imageData    = UIImageJPEGRepresentation(thumbImage, qualityCompress);
+        lenght     = imageData.length;
+        thumbImage = [UIImage imageWithData:imageData];
     }
-    NSLog(@"Luban-iOS image data size after compressed ==%f kb",dataLen.length/1024.0);
-    return thumbImage;
+    NSLog(@"Luban-iOS image data size after compressed ==%f kb",imageData.length/1024.0);
+    return imageData;
 }
 
 // specify the size
