@@ -96,17 +96,18 @@ static char customImageName;
     UIImage *thumbImage = [image fixOrientation];
     thumbImage = [thumbImage resizeImage:image thumbWidth:width thumbHeight:height withMask:maskName];
     
-    int qualityCompress = 1.0;
-    
+    float qualityCompress = 0.0;
     NSData *imageData = UIImageJPEGRepresentation(thumbImage, qualityCompress);
     
     NSUInteger lenght = imageData.length;
-    while (lenght / 1024 > size && qualityCompress > 0.06) {
+    while (lenght / 1024 > size && qualityCompress <= (1-0.06)) {
         
-        qualityCompress -= 0.06;
+        qualityCompress     += 0.06 ;
+        int intCommpress   = (int)(qualityCompress*100);
+        qualityCompress    = intCommpress/100.0;
         imageData    = UIImageJPEGRepresentation(thumbImage, qualityCompress);
-        lenght     = imageData.length;
-        thumbImage = [UIImage imageWithData:imageData];
+        lenght       = imageData.length;
+        thumbImage   = [UIImage imageWithData:imageData];
     }
     NSLog(@"Luban-iOS image data size after compressed ==%f kb",imageData.length/1024.0);
     return imageData;
@@ -128,8 +129,11 @@ static char customImageName;
             inSampleSize *= 2;
         }
     }
-    int heightRatio = (int)ceil(outH / (float) height);
-    int widthRatio  = (int)ceil(outW / (float) width);
+    // keep one decimal
+    int outWith  = (int)((outW / (float) width)*10);
+    int outHeiht = (int)((outH / (float) height)*10);
+    float heightRatio = outHeiht/10.0;
+    float widthRatio  = outWith/10.0;
     
     if (heightRatio > 1 || widthRatio > 1) {
         
