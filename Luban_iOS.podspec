@@ -10,7 +10,7 @@
 
 # ―――  Spec Metadata  ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
 s.name         = "Luban_iOS"
-s.version      = "1.0.5"
+s.version      = "1.0.6"
 s.summary      = "An UIImage's category to compress data almost without distortion ,Thanks to Android LuBan library"
 s.description  = <<-DESC
 An UIImage's category to compress data almost without distortion ,Thanks to Android LuBan library. Just pod in 2 files and no need for any setups
@@ -32,7 +32,7 @@ s.platform     = :ios, "8.0"
 
 # ――― Source Location ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
 
-s.source = { :git => "https://github.com/GuoZhiQiang/Luban_iOS.git", :tag => "1.0.5" }
+s.source = { :git => "https://github.com/GuoZhiQiang/Luban_iOS.git", :tag => "1.0.6" }
 
 # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
 
