@@ -33,7 +33,7 @@
 }
 
 - (void)initDataSource {
-    NSData *imgData       = [UIImage lubanCompressImage:[UIImage imageNamed:@"qwe123.JPG"] withMask:@"Luban_iOS"];
+    NSData *imgData       = [UIImage lubanCompressImage:[UIImage imageNamed:@"IMG_1998.JPG"] withMask:@"Luban_iOS"];
     self.imgCompressed    = [UIImage imageWithData:imgData];
     self.img_brower.image = _imgCompressed;
 }
